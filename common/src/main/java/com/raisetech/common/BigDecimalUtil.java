@@ -539,4 +539,52 @@ public class BigDecimalUtil {
         return getBigDecimalByRoundDown(obj, 0);
     }
 
+    /**
+     * 返回两个BigDecimal中的较大值
+     *
+     * @param decimal1
+     * @param decimal2
+     * @return 较大的BigDecimal值 如果无法比较就返回0
+     */
+    public static BigDecimal max(BigDecimal decimal1, BigDecimal decimal2) {
+        if (decimal1 == null && decimal2 == null) {
+            return BigDecimal.ZERO;
+        }
+        if (decimal1 == null) {
+            return decimal2;
+        }
+        if (decimal2 == null) {
+            return decimal1;
+        }
+        if (decimal1.compareTo(decimal2) >= 0) {
+            return decimal1;
+        } else {
+            return decimal2;
+        }
+    }
+
+    /**
+     * 返回两个BigDecimal中的较小值
+     *
+     * @param decimal1
+     * @param decimal2
+     * @return 较小的BigDecimal值 如果无法比较就返回0
+     */
+    public static BigDecimal min(BigDecimal decimal1, BigDecimal decimal2) {
+        if (decimal1 == null && decimal2 == null) {
+            return BigDecimal.ZERO;
+        }
+        if (decimal1 == null) {
+            return decimal2;
+        }
+        if (decimal2 == null) {
+            return decimal1;
+        }
+        if (decimal1.compareTo(decimal2) <= 0) {
+            return decimal1;
+        } else {
+            return decimal2;
+        }
+    }
+
 }
