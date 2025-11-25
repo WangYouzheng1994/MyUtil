@@ -8,9 +8,10 @@ import static com.raisetech.common.GetterUtil.isNull;
 
 
 /**
- * @Author: WangYouzheng
- * @Date: 2019/4/22 16 37
- * @Description: 基本运算。
+ * BigDecimal工具类，提供精确的数值计算和比较功能。
+ * 
+ * @author 王有政
+ * @since 1.0.0
  */
 public class BigDecimalUtil {
     private static final int ZERO = 0;
