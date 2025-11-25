@@ -253,6 +253,17 @@ public class BigDecimalUtil {
     }
 
     /**
+     * 默认保留两位小数的除法
+     *
+     * @param dividend
+     * @param divisor
+     * @return
+     */
+    public static BigDecimal divide(BigDecimal dividend, BigDecimal divisor) {
+        return divide(dividend, divisor, 2);
+    }
+
+    /**
      * 除法
      *
      * @param dividend
