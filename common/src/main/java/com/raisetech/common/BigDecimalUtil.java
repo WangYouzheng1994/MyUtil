@@ -4,7 +4,7 @@ import java.math.BigDecimal;
 import java.math.RoundingMode;
 import java.util.Date;
 
-import static java.util.Objects.isNull;
+import static com.raisetech.common.GetterUtil.isNull;
 
 
 /**
