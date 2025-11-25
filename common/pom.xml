@@ -44,6 +44,47 @@
           <target>8</target>
         </configuration>
       </plugin>
+
+      <!-- 源码发布插件 -->
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-source-plugin</artifactId>
+        <version>3.2.1</version>
+        <executions>
+          <execution>
+            <id>attach-sources</id>
+            <goals>
+              <goal>jar</goal>
+            </goals>
+          </execution>
+        </executions>
+      </plugin>
+
+      <!-- Java文档发布插件 -->
+      <!--<plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-javadoc-plugin</artifactId>
+        <version>3.3.1</version>
+        <configuration>
+          &lt;!&ndash; 忽略Java文档错误 &ndash;&gt;
+          <failOnError>false</failOnError>
+          <failOnWarnings>false</failOnWarnings>
+          &lt;!&ndash; 忽略缺失的注释 &ndash;&gt;
+          <doclint>none</doclint>
+          &lt;!&ndash; 设置编码 &ndash;&gt;
+          <encoding>UTF-8</encoding>
+          <charset>UTF-8</charset>
+          <docencoding>UTF-8</docencoding>
+        </configuration>
+        <executions>
+          <execution>
+            <id>attach-javadocs</id>
+            <goals>
+              <goal>jar</goal>
+            </goals>
+          </execution>
+        </executions>
+      </plugin>-->
     </plugins>
   </build>
 </project>
